@@ -57,11 +57,11 @@ a {
   margin-bottom: 0px;
   padding-left: 0px;
 }
-.link{
+/* .link{
   text-decoration: none;
   color: inherit;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 img {
   display: block;
@@ -123,28 +123,23 @@ body {
   display: flex;
   align-items: center;
 }
-
-
-.link {
-  position: relative;
-  
-transition: color 250ms var(--cubic);
-
-    /* font-weight: 500;
+.scroll-link{
+  position:relative;
+    /* display: inline-block; */
+    transition: color 250ms var(--cubic);
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: var(--text-color);
-    letter-spacing: 0.02em; */
+    color: var(--secondary-font-color);
+    letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
 }
-
-
 .current {
   color: var(--link-hover-focus);
 }
 
-  .link.current::after {
+  .scroll-link.current::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -170,8 +165,8 @@ transition: color 250ms var(--cubic);
     text-decoration: none;
     color: #212121;
   }
-  .nav-item .link:hover,
-  .nav-item .link:focus {
+  .nav-item .scroll-link:hover,
+  .nav-item .scroll-link:focus {
     color: var(--link-hover-focus);
   }
 
@@ -404,24 +399,7 @@ margin-bottom: 30px;
 
   margin-bottom: 50px;
 }
-/* .what-we-do-name {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  color: var(--secondary-font-color);
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-} */
-/* .what-item {
-  display: flex;
-  list-style: none;
-  margin-top: 50px;
-} */
+
 .performans-list {
   display: flex;
   flex-wrap: wrap;
@@ -435,9 +413,7 @@ margin-bottom: 30px;
 .performans-list-item:nth-child(3n) {
   margin-right: 0px;
 }
-/* .img-list:not(:last-child) {
-  margin-right: 30px;
-} */
+
 .performans-title{
   position: 
   absolute;
@@ -624,49 +600,43 @@ margin-right: 30px;
   padding-bottom: 60px;
   display: flex;
 }
-.footer-container{
+ .footer-container{
   display: flex;
   align-items: baseline;
 
 }
-.main-contact {
-  margin-top: 20px;
-}
-.footer-item {
-  margin-bottom: 9px;
-}
-.footer-item:not(:last-child) {
-  margin-bottom: 0px;
-}
-.footer-link {
-  font-weight: 400;
-  font-style: normal;
-  font-size: var(--main-font-size);
-  line-height: 1.71;
-  letter-spacing: var(--main-letter-spacing);
-}
-.footer-location {
-  color: var(--footer-link-color);
-}
-.footer-contact {
-  color: var(--footer-link-color);
-}
 
-.mail-footer,
-.tel-footer {
+
+
+.footer-adress {
+  font-family: 'Roboto';
+  color: var(--logo-footer-color);
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
-  text-decoration: none;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+}
+.footer-adress-mail,
+.footer-adress-tel {
+font-style: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+font-family: 'Roboto';
+color: rgba(255, 255, 255, 0.6);
+
+display: block;
+margin-top: 9px;
+}
+.footer-adress-mail:hover,
+.footer-adress-tel:hover,
+.footer-adress:hover,
+.footer-adress:focus,
+.footer-adress-mail:focus,
+.footer-adress-tel:focus {
+    color: var(--link-hover-focus);
 }
 
-.mail-footer:hover,
-.mail-footer:focus {
-  color: var (--link-hover-focus);
-}
 
 .logo-footer {
   font-family: Raleway;
@@ -745,8 +715,7 @@ body {
   font-weight: 400;
   font-size: 16px;
 }
-.header {
-}
+
 .main-nav {
   font-size: 14px;
 }
@@ -824,9 +793,7 @@ body {
 .contacts-tel:focus {
   color: #2196f3;
 }
-body {
-  
-}
+
 /*End-Header*/
 
 /*FILTER*/
@@ -1012,13 +979,15 @@ transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
 
 
 
-.card-description {
-  width: 370px;
-  padding: 20px 24px;
-  background: var(--logo-footer-color);
-  border: 1px solid var(--border-color);
-  border-top: 0;
+.description {
+  color: var(--primary-font-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  margin: 0;
 }
+
 .projects-list-title {
   font-weight: 700;
   font-size: 18px;
