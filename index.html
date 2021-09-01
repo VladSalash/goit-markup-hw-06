@@ -523,16 +523,14 @@
 
       <form class="form-footer" action="#">
         <h3 class="footer-form-title">Подпишитесь на рассылку</h3>
-          <label class="footer-form-label">
+          
             <input class="footer-input" type="email" name="email" placeholder="E-mail">
-            <span class="footer-label"></span>
-          </label>
-            <button class="button-primary subscription" type="submit">Подписаться
-              <svg class="footer-send" width="24" height="24">
-                  <use href="./images/icons/icons.svg#icon-send"></use>
-                </svg>
+          
+            <button class="button-primary subscription " type="submit">Подписаться<svg class="footer-send" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-send"></use>
+              </svg>
             </button>
-        
+          
 
   </form>
     
@@ -595,22 +593,12 @@
           <span class="modal-form-input-wrapper">Коментарий</span> 
           <textarea class="comment" name="comment" rows="8" placeholder="Введите текст" spellcheck="false"></textarea>
           </label>
-
-          <label class="form-checkbox-label">
-            <input class="form-checkbox-input" type="checkbox" name="policy">
-                <svg class="form-checkbox-icon" width="16" height="15">
-                    <use href="./images/icons/icons.svg#icon-checkbox"></use>
-                </svg>
-                <input class="form-checkbox-input" type="checkbox" name="policy" checked>
-                <svg class="checkbox-icon check" width="16" height="15">
-                    <use href="./images/icons/icons.svg#icon-check"></use>
-                </svg>
-            <span class="policy-text">Соглашаюсь с рассылкой и принимаю <a href="#" class="form-label-link">Условия договора</a></span>
-        </label>
-
-            <div class="button-form-submit">
-              <button class="button-primary form" type="submit">Отправить</button>
-            </div>
+                
+                <input type="checkbox" class="checkbox-input visually-hidden" id="accept-policy">
+                <label for="accept-policy" class="checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp; 
+                  <a href="#" class="form-label-link">Условия договора</a></label>
+                <div class="btn-container"><button class="modal-form-btn" type="submit">Отправить</button></div>
+            
           
           </form>
         </div>
